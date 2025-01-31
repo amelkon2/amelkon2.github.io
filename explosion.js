@@ -5,7 +5,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const loader = new THREE.TextureLoader();
-const texture = loader.load('path/to/your/image.jpg');
+const texture = loader.load('images/fiery-explosion-intense-orange-flames.png');
 const geometry = new THREE.PlaneGeometry(16, 9, 64, 36);
 const material = new THREE.MeshBasicMaterial({ map: texture, side: THREE.DoubleSide });
 const plane = new THREE.Mesh(geometry, material);
